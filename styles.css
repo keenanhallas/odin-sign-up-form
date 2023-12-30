@@ -6,6 +6,21 @@ textarea {
   font-size: 100%;
 }
 
+h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
 @font-face {
     font-family: 'blue_screen';
     src: url('./fonts/blue_screen_personal_use.woff2') format('woff2'),
@@ -18,10 +33,10 @@ body {
     display: flex;
     height: 97vh;
     padding: none;
+    background: rgb(230, 230, 230);
 }
 
 .section {
-    border: 1px solid black;
     width: 60%;
     min-width: 400px;
     height: 100%;
@@ -47,6 +62,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+}
+
+.sr-only {
+    position: absolute;
+    left: 999rem;
 }
 
 .logo-container {
@@ -86,4 +107,44 @@ body {
     text-decoration: underline;
     font-weight: 600;
     color: whitesmoke
+}
+
+.section.main-content {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 25px;
+}
+
+.button-container {
+    border: 1px solid black;
+    height: 25%;
+}
+
+.message-container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.form-container {
+    background: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px black;
+    height: 25%;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: 
+}
+
+label {
+    width: 49%;
+    border: 1px solid black;
 }
