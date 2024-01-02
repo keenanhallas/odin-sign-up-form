@@ -25,14 +25,59 @@
             <h2>I mean, I don't care, it's your call. I'm just some text on a page.</h2>
         </div>
         <div class="form-container">
-            <h3>Maybe submit your info anyway just for fun and see what happens?</h3>
-            <form class="sign-up-form" action="#" method="post">
-                <label for="">Test</label>
-                <label for="">Test</label>
-                <label for="">Test</label>
-                <label for="">Test</label>
-                <label for="">Test</label>
-                <label for="">Test</label>
+            <h3>Maybe submit your info anyway? See what happens?</h3>
+            <p>Required fields are followed by <span aria-label="required">*</span></p>
+            <form
+                class="sign-up-form"
+                id="sign-up-form"
+                action="#"
+                method="post">
+                <label for="first-name">FIRST NAME<span aria-label="required">*</span>
+                    <input
+                        type="text"
+                        name="first-name"
+                        id="first-name"
+                        placeholder="Steve"
+                        required/><span></span>
+                </label>
+                <label for="last-name">LAST NAME
+                    <input
+                        type="text"
+                        name="last-name"
+                        id="last-name"
+                        placeholder="Stevenson"
+                        required/>
+                </label>
+                <label for="">EMAIL<span aria-label="required">*</span>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="steve@example.com"
+                        required/><span></span>
+                </label>
+                <label for="">PHONE NUMBER
+                    <input
+                    type="tel"
+                    name="phone-number"
+                    id="phone-number"
+                    placeholder="012-345-6789"/>
+                </label>
+                <label for="">PASSWORD<span aria-label="required">*</span>
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Must be at least 12 characters"
+                        minlength="12"
+                        required/><span></span>
+                </label>
+                <label for="confirm-password">CONFIRM PASSWORD<span aria-label="required">*</span>
+                    <input type="password"
+                    id="confirm-password"
+                    minlength="12"
+                    required/><span></span>
+                </label>
             </form>
         </div>
         <div class="button-container">
