@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
     <title>Odin Sign-up Form</title>
 </head>
 <body>
@@ -45,10 +46,9 @@
                         type="text"
                         name="last-name"
                         id="last-name"
-                        placeholder="Stevenson"
-                        required/>
+                        placeholder="Stevenson"/>
                 </label>
-                <label for="">EMAIL<span aria-label="required">*</span>
+                <label for="email">EMAIL<span aria-label="required">*</span>
                     <input
                         type="email"
                         name="email"
@@ -56,14 +56,14 @@
                         placeholder="steve@example.com"
                         required/><span></span>
                 </label>
-                <label for="">PHONE NUMBER
+                <label for="phone-number">PHONE NUMBER
                     <input
                     type="tel"
                     name="phone-number"
                     id="phone-number"
                     placeholder="012-345-6789"/>
                 </label>
-                <label for="">PASSWORD<span aria-label="required">*</span>
+                <label for="password">PASSWORD<span aria-label="required">*</span>
                     <input
                         type="password"
                         name="password"
@@ -75,8 +75,9 @@
                 <label for="confirm-password">CONFIRM PASSWORD<span aria-label="required">*</span>
                     <input type="password"
                     id="confirm-password"
+                    name="confirm-password"
                     minlength="12"
-                    required/><span></span>
+                    required/><span class="password-warning"></span>
                 </label>
             </form>
         </div>
