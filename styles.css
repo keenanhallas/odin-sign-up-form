@@ -230,6 +230,7 @@ label {
 }
 
 .submit-btn {
+    font-weight: 600;
     padding: 8px 32px;
     border-radius: 5px;
     border: none;
